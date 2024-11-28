@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ProgramFormController">
+   <children>
+      <ImageView fitHeight="691.0" fitWidth="1081.0" layoutX="-15.0" layoutY="-8.0" pickOnBounds="true">
+         <image>
+            <Image url="@asset/Leonardo_Lightning_XL_culinary_academy_3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="527.0" layoutY="44.0" text="Programs">
+         <font>
+            <Font name="Sylfaen" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="456.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@asset/icon/1202854.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtId" layoutX="180.0" layoutY="210.0" onAction="#txtIdOnAction" onKeyReleased="#txtIdKeyAction" prefHeight="25.0" prefWidth="179.0" promptText="Enter Program Id">
+         <effect>
+            <Blend mode="COLOR_BURN" />
+         </effect>
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtDuration" layoutX="180.0" layoutY="310.0" onAction="#txtDurationOnAction" onKeyReleased="#txtDurationKeyAction" prefHeight="25.0" prefWidth="179.0" promptText="Enter Amount Of Months ">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+         <effect>
+            <Blend mode="COLOR_BURN" />
+         </effect></TextField>
+      <TextField fx:id="txtFee" layoutX="180.0" layoutY="360.0" onKeyReleased="#txtFeeKeyAction" prefHeight="25.0" prefWidth="179.0" promptText="Enter Fee Of Program">
+         <effect>
+            <Blend mode="COLOR_BURN" />
+         </effect>
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtName" layoutX="180.0" layoutY="260.0" onAction="#txtNameOnAction" onKeyReleased="#txtNameKeyAction" prefHeight="25.0" prefWidth="179.0" promptText="Enter Program Name">
+         <effect>
+            <Blend mode="COLOR_BURN" />
+         </effect>
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextField>
+      <Label layoutX="92.0" layoutY="210.0" text="ID :" textFill="#0059ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="310.0" text="Duration :" textFill="#0059ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="260.0" text="Name :" textFill="#0059ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="360.0" text="Fee :" textFill="#0059ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="149.0" layoutY="461.0" onAction="#btnSaveOnAction" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: #18c418;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="793.0" layoutY="460.0" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: #f6120e;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="503.0" layoutY="459.0" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: #25a5ff;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="647.0" layoutY="460.0" onAction="#btnClearOnAction" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: #311313;" text="clear" textFill="WHITE">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblProgram" layoutX="385.0" layoutY="136.0" onMouseClicked="#tblProgramOnClickAction" opacity="0.87" prefHeight="271.0" prefWidth="618.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="128.0" text="ID" />
+          <TableColumn fx:id="colProgramName" prefWidth="138.0" text="Program Name" />
+            <TableColumn fx:id="colDuration" prefWidth="227.0" text="Duration" />
+            <TableColumn fx:id="colFee" prefWidth="124.6666259765625" text="Fee(LKR)" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

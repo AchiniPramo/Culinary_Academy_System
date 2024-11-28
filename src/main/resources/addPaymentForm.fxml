@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addPaymentForm" prefHeight="400.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AddPaymentFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="474.0" focusTraversable="true" layoutX="-1.0" opacity="0.34" pickOnBounds="true">
+         <image>
+            <Image url="@asset/Leonardo_Lightning_XL_The_Culinary_Academy_colorful_center_log_2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="149.0" layoutY="41.0" prefHeight="16.0" prefWidth="178.0" text="Add Payment">
+         <font>
+            <Font name="Sylfaen" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="115.0" text="Student ID : " textFill="#0059ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="159.0" text="Student Name : " textFill="#0059ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="202.0" text="Program : " textFill="#0059ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="248.0" text="Payment : " textFill="#0059ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtStudentId" editable="false" layoutX="214.0" layoutY="111.0">
+         <effect>
+            <Blend mode="COLOR_BURN" />
+         </effect></TextField>
+      <TextField fx:id="txtStudentName" editable="false" layoutX="214.0" layoutY="155.0">
+         <effect>
+            <Blend mode="COLOR_BURN" />
+         </effect></TextField>
+      <TextField fx:id="txtPayment" layoutX="214.0" layoutY="244.0" onKeyReleased="#txtPaymentKeyAction">
+         <effect>
+            <Blend mode="COLOR_BURN" />
+         </effect></TextField>
+      <JFXButton layoutX="261.0" layoutY="313.0" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="84.0" style="-fx-background-color: #18c218;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="132.0" layoutY="313.0" onAction="#btnCancelOnAction" prefHeight="31.0" prefWidth="84.0" style="-fx-background-color: #f2120e;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtProgram" editable="false" layoutX="214.0" layoutY="198.0">
+         <effect>
+            <Blend mode="COLOR_BURN" />
+         </effect></TextField>
+   </children>
+</AnchorPane>

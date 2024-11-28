@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboardForm" prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashboardController">
+   <children>
+      <ImageView cache="true" depthTest="ENABLE" fitHeight="691.0" fitWidth="1081.0" focusTraversable="true" layoutX="-12.0" layoutY="-8.0" mouseTransparent="true" pickOnBounds="true">
+         <image>
+            <Image url="@asset/Leonardo_Lightning_XL_culinary_academy_images_0.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="430.0" layoutY="48.0" nodeOrientation="LEFT_TO_RIGHT" text="Dashboard">
+         <font>
+            <Font name="Sylfaen" size="30.0" />
+         </font>
+         <effect>
+            <Shadow height="1.0" radius="0.0" width="0.0" />
+         </effect>
+      </Label>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="373.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@asset/icon/icons8-dashboard-48.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="20.0" layoutY="150.0" opacity="0.86" prefHeight="92.0" prefWidth="328.0" style="-fx-background-radius: 10; -fx-background-color: E41B17FF;">
+         <children>
+            <Label layoutX="106.0" layoutY="3.0" text="Total Student" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalStudent" alignment="CENTER" layoutX="141.0" layoutY="38.0" prefHeight="30.0" prefWidth="48.0" text="0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Sans Condensed Bold" size="25.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <TableView fx:id="tblStudyAll" layoutX="379.0" layoutY="148.0" opacity="0.8" prefHeight="337.0" prefWidth="622.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="184.0" text="Student ID" />
+          <TableColumn fx:id="colName" prefWidth="259.0" text="Student Name" />
+            <TableColumn fx:id="colDate" prefWidth="183.0" text="Registration Date" />
+        </columns>
+      </TableView>
+      <Pane layoutX="20.0" layoutY="270.0" opacity="0.86" prefHeight="92.0" prefWidth="329.0" style="-fx-background-radius: 10; -fx-background-color: E41B17FF;">
+         <children>
+            <Label layoutX="95.0" layoutY="3.0" text="Total Programs" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalPrograms" alignment="CENTER" layoutX="137.0" layoutY="37.0" prefHeight="30.0" prefWidth="48.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Sans Condensed Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="20.0" layoutY="390.0" opacity="0.86" prefHeight="92.0" prefWidth="329.0" style="-fx-background-radius: 10; -fx-background-color: E41B17FF;">
+         <children>
+            <Label layoutX="95.0" layoutY="3.0" text="Student Count " textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblStudentCount" alignment="CENTER" layoutX="137.0" layoutY="37.0" prefHeight="30.0" prefWidth="48.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Sans Condensed Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

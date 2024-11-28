@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="settingForm" prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.SettingFormController">
+   <children>
+      <ImageView fitHeight="691.0" fitWidth="1081.0" layoutX="-15.0" layoutY="-8.0" pickOnBounds="true">
+         <image>
+            <Image url="@asset/Leonardo_Lightning_XL_culinary_academy_0.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="521.0" layoutY="52.0" text="Setting">
+         <font>
+            <Font name="Sylfaen" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="453.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@asset/icon/icons8-setting-48.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="52.0" layoutY="94.0" text="Change Password">
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="212.0" text="User Name : " textFill="#0059ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="txtUserName" layoutX="169.0" layoutY="209.0" onAction="#txtUserNameOnAction" />
+      <Label layoutX="45.0" layoutY="261.0" text="Password : " textFill="#0059ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPassword" layoutX="169.0" layoutY="258.0" onAction="#txtPasswordOnAction" />
+      <Label layoutX="44.0" layoutY="311.0" text="New Password : " textFill="#0059ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtNewPassword" layoutX="171.0" layoutY="308.0" onAction="#txtNewPasswordOnAction" />
+      <Label layoutX="45.0" layoutY="362.0" text="Confirm Password : " textFill="#0059ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="113.0" layoutY="470.0" onAction="#btnUpdateOnAction" prefHeight="30.0" prefWidth="77.0" style="-fx-background-color: #1F45FC;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="DejaVu Serif Condensed Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Pane fx:id="visiblePane" layoutX="376.0" layoutY="98.0" prefHeight="496.0" prefWidth="619.0">
+         <children>
+            <Label layoutX="287.0" layoutY="2.0" text="Users">
+               <font>
+                  <Font name="DejaVu Sans Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblUser" layoutX="7.0" layoutY="100.0" opacity="0.8" prefHeight="333.0" prefWidth="595.0">
+               <columns>
+                  <TableColumn fx:id="colUserName" prefWidth="290.0" text="User Name" />
+                  <TableColumn fx:id="colUserRole" prefWidth="301.0" text="User Role" />
+                  <TableColumn fx:id="colDelete" minWidth="0.66668701171875" prefWidth="26.0" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <PasswordField fx:id="txtConfirmPassword" layoutX="170.0" layoutY="360.0" />
+   </children>
+</AnchorPane>

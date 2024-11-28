@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.effect.InnerShadow?>
+<AnchorPane prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ViewAllFormController">
+   <children>
+      <ImageView fitHeight="691.0" fitWidth="1081.0" layoutX="-15.0" layoutY="-8.0" pickOnBounds="true">
+         <image>
+<!--            <Image url="@asset/Leonardo_Lightning_XL_culinary_images_1%20(1).png" />-->
+         </image>
+         <effect>
+            <InnerShadow height="0.0" radius="63.25" width="255.0" />
+         </effect>
+      </ImageView>
+      <Label layoutX="453.0" layoutY="65.0" text="View Students">
+         <font>
+            <Font name="Sylfaen" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="385.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@asset/icon/icons8-view-48.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="selectPrgramChoiceBox" layoutX="216.0" layoutY="170.0" prefHeight="24.0" prefWidth="204.0" />
+      <Label layoutX="64.0" layoutY="169.0" text="Select Program : " textFill="#0059ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="viewTbl" layoutX="19.0" layoutY="256.0" opacity="0.75" prefHeight="271.0" prefWidth="982.0">
+        <columns>
+          <TableColumn fx:id="colStudentId" prefWidth="95.0" text="Student ID" />
+          <TableColumn fx:id="colStudentName" prefWidth="241.6666717529297" text="Student Name" />
+            <TableColumn fx:id="colRegisterDate" prefWidth="132.3333282470703" text="Register Date" />
+            <TableColumn fx:id="colInstallment" prefWidth="189.33334350585938" text="1 st Installment" />
+            <TableColumn fx:id="colBalance" prefWidth="173.33331298828125" text="Balance" />
+            <TableColumn fx:id="colPayment" prefWidth="153.0" text="Payment" />
+        </columns>
+      </TableView>
+      <Label layoutX="584.0" layoutY="168.0" text="Student Count : " textFill="#0059ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStudentCount" alignment="CENTER" layoutX="758.0" layoutY="161.0" prefHeight="21.0" prefWidth="35.0" text="0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutX="430.0" layoutY="162.0" onMouseClicked="#refreshTblOnClickAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #1E90FF; -fx-background-radius: 5;" />
+      <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="439.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@asset/icon/icons8-refresh-48.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

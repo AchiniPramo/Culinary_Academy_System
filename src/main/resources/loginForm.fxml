@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="fullLoginForm" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #E2A76F; -fx-background-image: url('asset/Leonardo_Diffusion_grunge_vintage_old_aged_texture_background_1.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+   <children>
+      <AnchorPane layoutX="-7.0" layoutY="2.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0">
+         <children>
+            <AnchorPane layoutX="8.0" layoutY="18.0" prefHeight="576.0" prefWidth="1024.0">
+               <children>
+                  <BorderPane prefHeight="566.0" prefWidth="1024.0">
+                     <top>
+                        <AnchorPane cache="true" prefHeight="564.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView blendMode="OVERLAY" cache="true" cacheHint="QUALITY" depthTest="DISABLE" fitHeight="576.0" fitWidth="1024.0" layoutX="4.0" layoutY="-10.0" nodeOrientation="INHERIT">
+                                 <image>
+                                    <Image url="@asset/Leonardo_Diffusion_grunge_vintage_old_aged_texture_background_1.jpg" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                                 <effect>
+                                    <Reflection bottomOpacity="1.0" fraction="0.0" topOpacity="1.0" />
+                                 </effect>
+                              </ImageView>
+                              <ImageView cache="true" cacheHint="QUALITY" depthTest="DISABLE" fitHeight="576.0" fitWidth="1024.0" layoutX="-6.0" layoutY="-20.0">
+                                 <image>
+                                    <Image url="@asset/Leonardo_Lightning_XL_The_Culinary_Academy_colorful_center_bac_2.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane fx:id="loginForm" cache="true" depthTest="DISABLE" layoutX="584.0" layoutY="-12.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="570.0" prefWidth="425.0" style="-fx-background-position: center;">
+                                 <children>
+                                    <TextField fx:id="inputUserName" layoutX="140.0" layoutY="191.0" onAction="#inputUserNameOnAction" prefHeight="32.0" prefWidth="239.0" promptText="Enter User Name" style="-fx-background-radius: 5;">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <PasswordField fx:id="inputPassword" layoutX="142.0" layoutY="274.0" onAction="#inputPasswordOnAction" prefHeight="32.0" prefWidth="239.0" promptText="Enter Password" style="-fx-background-radius: 5;">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font>
+                                    </PasswordField>
+                                    <Button layoutX="145.0" layoutY="396.0" mnemonicParsing="false" onAction="#loginOnAction" prefHeight="32.0" prefWidth="127.0" style="-fx-background-color: #04079d;" text="LOGIN">
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="0.7298578199052133" startX="0.22274881516587677">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="1.0" blue="0.8761904835700989" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="1.0" green="1.0" blue="1.0" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                    </Button>
+                                    <Text fill="#800000" layoutX="108.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?" />
+                                    <Text fill="#00c94d" layoutX="268.0" layoutY="460.0" onMouseClicked="#goToSignUpOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up" underline="true">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <Label layoutX="41.0" layoutY="197.0" text="User Name :">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="46.0" layoutY="277.0" text="Password :">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="142.0" layoutY="60.0" text="LOG IN">
+                                       <font>
+                                          <Font name="Sylfaen" size="35.0" />
+                                       </font>
+                                       <textFill>
+                                          <RadialGradient centerX="0.494475138121547" centerY="0.5" cycleMethod="REFLECT" radius="0.5">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="1.0" blue="0.8761904835700989" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="1.0" green="1.0" blue="1.0" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </RadialGradient>
+                                       </textFill>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </top>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
