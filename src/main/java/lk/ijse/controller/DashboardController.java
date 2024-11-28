@@ -68,7 +68,7 @@ public class DashboardController {
             studentTms.add(new StudyAllStudentTm(studentDTO.getStudentId(),studentDTO.getName(),studentDTO.getRegistrationDate()));
         }
         tblStudyAll.setItems(studentTms);
-        lblStudentCount.setText(String.valueOf(studentTms.size()));
+//        lblStudentCount.setText(String.valueOf(studentTms.size()));
     }
 
 }

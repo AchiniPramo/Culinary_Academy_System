@@ -1,4 +1,4 @@
-    package lk.ijse.util;
+package lk.ijse.util;
 
 import org.mindrot.jbcrypt.BCrypt;
 
