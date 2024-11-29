@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="addProgramForm" prefHeight="497.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddProgramFormController">
+   <children>
+      <ImageView fitHeight="497.0" fitWidth="331.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/a-genate-background-wallpaper-for-culinary-academy-YElSmTicR52KqaGPfkpiaw-HULQoPMhQPG7FM5UF2W7OQ.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="331.0" layoutY="134.0" prefHeight="363.0" prefWidth="483.0" style="-fx-background-color: #3e573e;">
+         <children>
+            <Label layoutX="35.0" layoutY="36.0" text="Select Program : " textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtStudentId" editable="false" layoutX="92.0" layoutY="110.0" prefHeight="43.0" prefWidth="317.0" promptText="Student ID" style="-fx-background-color: #6a866a;">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtStudentName" editable="false" layoutX="92.0" layoutY="173.0" prefHeight="43.0" prefWidth="317.0" promptText="Student  Name" style="-fx-background-color: #6a866a;">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </TextField>
+            <ChoiceBox fx:id="selectProgramChoiceBox" layoutX="173.0" layoutY="29.0" prefHeight="31.0" prefWidth="179.0" />
+            <TextField fx:id="txtInstallment" layoutX="92.0" layoutY="240.0" onKeyReleased="#txtInstallmentKeyAction" prefHeight="43.0" prefWidth="317.0" promptText="1st Installment" style="-fx-background-color: #6a866a;">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </TextField>
+            <JFXButton layoutX="282.0" layoutY="318.0" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: black;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="141.0" layoutY="318.0" onAction="#btnCancelOnAction" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: #E41B17;" text="End" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="331.0" prefHeight="133.0" prefWidth="474.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="110.0" fitWidth="76.0" layoutX="7.0" layoutY="12.0" pickOnBounds="true">
+               <image>
+                  <Image url="@images/Salad-Plate.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="45.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In Curnaly Academy Add Student Program" textAlignment="CENTER" wrappingWidth="317.13671875">
+               <font>
+                  <Font name="Consolas Bold" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

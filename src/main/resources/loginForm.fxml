@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="logInForm" prefHeight="666.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginFormController">
+   <children>
+      <AnchorPane layoutX="464.0" layoutY="135.0" prefHeight="528.0" prefWidth="603.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <GaussianBlur />
+         </effect>
+         <children>
+            <ImageView fitHeight="216.0" fitWidth="310.0" layoutX="234.0" layoutY="220.0">
+               <image>
+                  <Image url="@../../../../../../../Downloads/mysql/1000_F_323501505_HE7Gte88nUSpKXtcXVNgL91QE3g2lT1s.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="225.0" fitWidth="173.0" layoutX="430.0" layoutY="303.0">
+               <image>
+                  <Image url="@../../../../../../../Downloads/mysql/88.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="381.0" fitWidth="399.0" layoutX="-20.0" layoutY="-53.0">
+               <image>
+                  <Image url="@../../../../../../../Downloads/mysql/1000_F_323501505_HE7Gte88nUSpKXtcXVNgL91QE3g2lT1s.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="232.0" fitWidth="387.0" layoutX="-67.0" layoutY="268.0">
+               <image>
+                  <Image url="@../../../../../../../Downloads/mysql/1000_F_323501505_HE7Gte88nUSpKXtcXVNgL91QE3g2lT1s.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="298.0" fitWidth="645.0" layoutX="-42.0" layoutY="-149.0" pickOnBounds="true">
+               <image>
+                  <Image url="@images/up.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="298.0" fitWidth="387.0" layoutX="14.0" layoutY="179.0" pickOnBounds="true">
+               <image>
+                  <Image url="@images/123.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="322.0" fitWidth="441.0" layoutX="113.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/dots.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="248.0" fitWidth="377.0" layoutX="-21.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/12345.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="102.0" layoutX="364.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/paprika.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="666.0" fitWidth="422.0">
+         <image>
+            <Image url="@images/a-photo-of-a-culinary-academy-with-a-white-and-gre-djwlaNEfRqKscdVKYyi1EA-YZiOFnElSfOo_jwAlFJcng.jpeg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="inputUserName" layoutX="543.0" layoutY="296.0" onAction="#inputUserNameOnAction" prefHeight="46.0" prefWidth="412.0" promptText="Input Your Name Here" style="-fx-background-radius: 5; -fx-border-color: black;" />
+      <JFXButton layoutX="688.0" layoutY="517.0" onAction="#loginOnAction" prefHeight="32.0" prefWidth="122.0" style="-fx-background-color: #76ff7a; -fx-background-radius: 10;" text="LogIn">
+         <font>
+            <Font name="Corbel Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text fill="#616161" layoutX="515.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password : " wrappingWidth="122.0">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#616161" layoutX="515.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name : " wrappingWidth="122.0">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="664.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome !" wrappingWidth="225.0">
+         <font>
+            <Font name="Lucida Console" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#5b5b5b" layoutX="664.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let's Go Culinary Academy" wrappingWidth="186.0">
+         <font>
+            <Font name="Lucida Console" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="795.0" layoutY="592.0" onMouseClicked="#goToSignUpOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up Here" wrappingWidth="110.0">
+         <font>
+            <Font name="Lucida Console" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Text>
+      <Text fill="#5b5b5b" layoutX="605.0" layoutY="593.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't Have An Account ?" wrappingWidth="186.0">
+         <font>
+            <Font name="Lucida Console" size="12.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="inputPassword" layoutX="543.0" layoutY="429.0" onAction="#inputPasswordOnAction" prefHeight="46.0" prefWidth="412.0" promptText="Input Your Password Here" style="-fx-background-radius: 5; -fx-border-color: black;" />
+   </children>
+</AnchorPane>

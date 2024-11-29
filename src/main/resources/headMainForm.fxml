@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="dashboardFrom" prefHeight="666.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HeadMainFormController">
+   <children>
+      <ImageView fitHeight="678.0" fitWidth="1080.0" layoutY="-9.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/ethno-belek-lezzet-banner.jpg" />
+         </image>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </ImageView>
+      <AnchorPane fx:id="changeForm" layoutX="34.0" layoutY="95.0" prefHeight="544.0" prefWidth="1013.0">
+         <children>
+            <Text fill="WHITE" layoutX="67.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="                Is a renowned institution that offers a variety of culinary training programsfor aspiring chefs in Sri Lanka. Established over a decade ago, the academy currently hostsapproximately 2,500 students each year, providing them with both theoretical knowledge and hands-on experience in the culinary arts." textAlignment="CENTER" wrappingWidth="918.13671875">
+               <font>
+                  <Font name="Consolas Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="20.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Culinary Academy" wrappingWidth="242.13671875">
+               <font>
+                  <Font name="Consolas Bold" size="19.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <AnchorPane layoutX="87.0" layoutY="34.0" prefHeight="48.0" prefWidth="884.0" style="-fx-background-color: #000000; -fx-background-radius: 20;">
+         <children>
+            <JFXButton fx:id="btnDashboard" layoutX="14.0" layoutY="8.0" onAction="#btnDashboardOnAction" prefHeight="32.0" prefWidth="178.0" text="DASHBOARD" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnStudent" layoutX="192.0" layoutY="8.0" onAction="#btnStudentOnAction" prefHeight="32.0" prefWidth="178.0" text="MANAGE STUDENT" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnProgram" layoutX="370.0" layoutY="8.0" onAction="#btnProgramOnAction" prefHeight="33.0" prefWidth="178.0" text="MANAGE PROGRAM" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnView" layoutX="548.0" layoutY="8.0" onAction="#btnViewOnAction" prefHeight="19.0" prefWidth="161.0" text="VIEW ALL" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnSetting" layoutX="697.0" layoutY="8.0" onAction="#btnSettingOnAction" prefHeight="26.0" prefWidth="161.0" text="SETTINGS" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="1015.0" layoutY="42.0" onMouseClicked="#logOutAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/018_128_arrow_exit_logout-512.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
